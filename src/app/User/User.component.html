@@ -23,8 +23,45 @@
         [formControl]="Password"
         >
   </label>
+  <label>
+    StreetNumber:
+      <input 
+        type="text" 
+        placeholder="StreetNumber"
+        [formControl]="StreetNumber"
+        >
+  </label>
+  <label>
+    Street:
+      <input 
+        type="text" 
+        placeholder="Street"
+        [formControl]="Street"
+        >
+  </label>
+  <label>
+    CityZip:
+      <input 
+        type="number" 
+        placeholder="zipcode"
+        [formControl]="CityZip"
+        >
+  </label>
+  <label>
+    City:
+      <input 
+        type="text" 
+        placeholder="city"
+        [formControl]="City"
+        >
+  </label>
+  
   <button (click)="onSubmit()">soumettre</button>
 </div>
-<h1>{{user.UserName}}</h1>
-<h1>{{user.Email}}</h1>
-<h1>{{user.Password}}</h1>
+<h1>UserName: {{user.UserName}}</h1>
+<h1>Email: {{user.Email}}</h1>
+<h1>Password: {{user.Password}}</h1>
+<h1>Street number: {{StreetNumber}}</h1>
+<h1>Street: {{Street}}</h1>
+<h1>zipcode: {{user.CityZip}}</h1>
+<h1> city: {{user.City}}</h1>
